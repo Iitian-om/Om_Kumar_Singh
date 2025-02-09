@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-ind">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om kumar singh</title>
+
+    <!-- Linking the favicon icon -->
+    <link rel="icon" type="image/x-icon" href="/me.jpg">
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Link to Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Keyframes for the typing animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Keyframes for the blinking caret */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: #8B4513;
+                /* SaddleBrown for caret */
+            }
+        }
+
+        .profile-photo:hover {
+            width: 105px;
+            height: 105px;
+        }
+    </style>
+</head>
+
+<body class="loading">
+
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <!-- JavaScript for Preloader -->
+    <script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            loader.classList.add('hidden');
+            document.body.classList.remove('loading');
+        });
+    </script>
+    
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div id="My-Name">
+                <h1>OM KUMAR SINGH</h1>
+            </div>
+            <div id="Nav-Menu">
+                <ul>
+                    <li><a class="vintage-link" href="#home">Home</a></li>
+                    <li><a class="vintage-link" href="#mywork">My Work</a></li>
+                    <li><a class="vintage-link" href="#contactme">Contact Me</a></li>
+                </ul>
+                <div class="hamburger" aria-label="Toggle navigation">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Aside Section -->
+    <aside class="profile-aside">
+        <div class="profile-photo-aside">
+            <img class="profile-photo" style="border: 1px solid rgb(255, 255, 255);" src="/me.jpg"
+                alt="Your Photo">
+        </div>
+        <h2 class="profile-name">OM KUMAR</h2>
+        <div class="aside-text">
+            <p> Hello! I'm Om Kumar Singh,
+                a passionate web developer dedicated to creating dynamic
+                and responsive websites.
+            </p>
+        </div>
+    </aside>
+
+
+    <!-- Main Section  -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-container">
+                <div>
+                    <div class="typewriter">
+                        <h2 id="Welcome-Text">Welcome to My Portfolio</h2>
+                    </div>
+                    <div id="Intro-text">
+                        <p>Hello! I'm OM, a passionate web developer dedicated to creating dynamic and responsive
+                            websites. With a keen eye for design and a strong foundation in modern technologies, I
+                            strive to build user-friendly interfaces. My portfolio showcases a variety of projects that
+                            highlight my skills in HTML, CSS,JavaScript, and more.I'm always eager to take on new
+                            challenges and collaborate with other tinnovative ideas to life.Feel free to explore my
+                            work, learn more about my background, and get in touchthrough the contact section.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Work Section -->
+        <section id="mywork">
+            <h2>My Work</h2>
+            <p class="section-description">
+                Here are some of my coding related projects.
+            </p>
+            <div class="projects">
+                <!-- Example of a Clickable Card -->
+                <div class="work-card" id="work-card-1">
+                    <a href="https://example.com/project1-details" target="_blank">
+                        <img src="/Project1.jpg" alt="Project 1">
+                    </a>
+                    <div class="card-content">
+                        <h3>Project 1</h3>
+                        <p>A responsive e-commerce website built with HTML, CSS, and JavaScript</p>
+                    </div>
+                </div>
+                <div class="work-card" id="work-card-2">
+                    <a href="https://github.com/iitian-om/LMS-1.0" target="_blank">
+                        <img src="/Project2.jpg" alt="Project 2">
+                    </a>
+                    <div class="card-content">
+                        <h3>Project 2</h3>
+                        <p>An LMS platform named EduHub</p>
+                    </div>
+                </div>
+                <div class="work-card" id="work-card-3">
+                    <a href="https://example.com/project3-details" target="_blank">
+                        <img src="/Project3.jpg" alt="Project 3">
+                    </a>
+                    <div class="card-content">
+                        <h3>Project 3</h3>
+                        <p>A mobile-friendly blog platform created with WordPress.</p>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+            <span id="codeshowroom" class="codeshowroom-text">
+                You can browse through my other works on <a href="https://github.com/iitian-om"
+                    class="vintage-link">@Code
+                    Showroom</a>! & AT <a class="vintage-link" href="http://web-dev-om.my.canva.site"> other designs
+                </a> .
+            </span>
+        </section>
+
+        <!-- My Learning Section -->
+        <section id="learning">
+            <h2>My Learning Journey</h2>
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <ul class="learning-list">
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>CSS Frameworks</li>
+                        <li>Web Accessibility</li>
+                    </ul>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <ul class="learning-list">
+                        <li>Python for Data Analysis</li>
+                        <li>Machine Learning Basics</li>
+                        <li>Statistical Analysis</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Computer Science</h3>
+                    <ul class="learning-list">
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>System Design</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Qualifications Section -->
+        <section id="educationalqualification">
+            <h2>MY EDUCATIONAL QUALIFICATIONS</h2>
+            <div class="college" style="padding: 15px; border: 1px solid rgb(255, 211, 158); border-radius: 5px;">
+                <h3>Current Presuing Education</h3>
+                <div class="iitp" style="padding: 10px 10px 10px 10px;">
+                    <span id="iitp-logo">
+
+                        <a href="https://www.iitp.ac.in">
+                            <img src="https://www.iitp.ac.in/templates/iitpatna/images/logo.png" class="iitp-image"
+                            alt="Indian Institute of Technology Patna"></a>
+                    </span>
+                    <span id="iitp-text">
+                        <p>I am currently presuing my undergrad at <a href="http://iitp.ac.in"
+                                class="vintage-link"><b>Indian Institute of Technology,Patna</b></a> in computer science
+                            with specialization in data analytics. Under the department of
+                            <a href="https://iitp.ac.in/departments/engineering-technology/computer-science-and-engineering"
+                                class="vintage-link">Computer science
+                            </a> and <a href="https://cet.iitp.ac.in" class="vintage-link">“Centerfor Educational
+                                Technology (CET)”
+                            </a> .
+                        </p>
+                    </span>
+                </div>
+                <h3 style="padding-top: 15px;">My Schooling</h3>
+                <div class="schools">
+                    <p> I did my High schooling from
+                        <a href="https://schools.org.in/south-delhi/07090120305/govt-boys-sr-sec-school-no-1-badarpur-new-delhi.html"
+                            class="vintage-link">
+                            GBSSS No1 Badarpur New Delhi
+                        </a>
+                        during april, 2019 to march, 2023. Before that i did my middile school, pre school from
+                        <a href="https://www.bkcamps.com/" class="vintage-link">Bkcamps
+                        </a>,
+                        <a href="https://www.uniapply.com/school/bal-vaishali-model-public-school-molarband-extension-badarpur-south-east-delhi/"
+                            class="vintage-link">BVMPS
+                        </a>
+                        respectively. Also all my schooling had gone under
+                        <a href="https://www.cbse.gov.in" class="vintage-link">CBSE</a> .
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Interests Section -->
+        <section id="myinterests">
+            <h2>My Interests</h2>
+            <div class="interest">
+                <a href="https://en.wikipedia.org/wiki/Higher_mathematics" class="vintage-link"
+                    title="Higher Mathematics">
+                    <img src="higher-mathematics.jpg" alt="Higher Mathematics">
+                </a>
+                <div class="interest-text">
+                    <h3 class="interest-heading">Higher Mathematics</h3>
+                    <p>My fascination with higher mathematics drives me to explore complex theories and solve intricate
+                        problems. It enhances my analytical skills and complements my web development work by enabling
+                        logical and structured thinking.</p>
+                </div>
+            </div>
+            <div class="interest">
+                <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="vintage-link"
+                    title="Research in AI & LLMs">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png/100px-Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png" alt="Research in AI & LLMs">
+                </a>
+                <div class="interest-text">
+                    <h3 class="interest-heading">Research in AI & LLMs</h3>
+                    <p>Delving into Artificial Intelligence and Large Language Models (LLMs) keeps me at the forefront
+                        of technological advancements. I enjoy experimenting with machine learning algorithms to create
+                        intelligent, user-centric applications.</p>
+                </div>
+            </div>
+            <div class="interest">
+                <a href="https://en.wikipedia.org/wiki/Nuclear_physics" class="vintage-link" title="Nuclear Physics">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/NuclearReaction.svg/200px-NuclearReaction.svg.png" alt="Nuclear Physics">
+                </a>
+                <div class="interest-text">
+                    <h3 class="interest-heading">Nuclear Physics</h3>
+                    <p>Nuclear physics captivates me with its profound implications on energy and the fundamental
+                        building blocks of the universe. Studying this field broadens my scientific perspective and
+                        fosters a deeper appreciation for the complexities of our world.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contactme">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>My <a href="https://github.com/iitian-om" class="vintage-link">Github</a> and <b>Email</b>: omkumarsingh56@gmail.com</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section  -->
+    <footer>
+        <p>Thanks for your time to visit my portfolio Website! Your support means the world to me. To support you can
+            follow me on my</p>
+        <div class="social-links">
+            <h4>Social Media Links</h4>
+            <ul>
+                <li><a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                </li>
+                <li><a href="https://instagram.com/i_am_om_2k05" target="_blank"><i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                </li>
+                <li><a href="https://linkedin.com/in/om-kumar-singh-039b58299" target="_blank"><i
+                            class="fab fa-linkedin-in"></i>
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
